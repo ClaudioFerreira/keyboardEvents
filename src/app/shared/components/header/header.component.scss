@@ -1,0 +1,19 @@
+$colorBackgroundHeader: #333;
+$colorFontLight: #fff;
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 30px;
+  background-color: $colorBackgroundHeader;
+  color: $colorFontLight;
+
+  &__menu-bar {
+    &--title{
+      font-weight: 700;
+    }
+  }
+}
