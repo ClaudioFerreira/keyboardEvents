@@ -1,0 +1,22 @@
+<section class="keyboardEvent">
+  <div class="keyboardEvent__key" *ngIf="key; else noKeyPress">
+    <h3>JavaScript Key Code: {{ key.keyCode }}</h3>
+    <h1>{{ key.keyCode }}</h1>
+  </div>
+  <div class="keyboardEvent__details" *ngIf="key">
+    <p>Key Code Information</p>
+
+    <div class="keyboardEvent__details--cards" *ngIf="key">
+      <app-kb-event-card
+        [cardTitle]="'event.key' + key.key"
+        [cardBody]="[key.code]"
+      ></app-kb-event-card>
+    </div>
+  </div>
+
+  <ng-template #noKeyPress>
+    <div class="keyboardEvent__no-key">
+      <h2>Press any key to get the JavaScript event keycode info</h2>
+    </div>
+  </ng-template>
+</section>

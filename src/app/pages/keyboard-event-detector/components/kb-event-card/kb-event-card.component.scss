@@ -1,0 +1,23 @@
+.card {
+  min-width: 150px;
+  box-shadow: 0 0 8px 0 rgb(0 0 0 / 8%);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+  &--title {
+    color: #fff;
+    background-color: #c90101;
+    padding: 20px;
+  }
+
+  &--body {
+    min-height: 80px;
+    padding: 20px;
+    background-color: #fff;
+  }
+
+  &--footer {
+    color: #fff;
+    background-color: #3d3d3d;
+    padding: 20px;
+  }
+}
